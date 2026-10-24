@@ -2,7 +2,13 @@
 
 A personal Android running app planned around reliable recording, understandable adaptive training, and ownership of your data.
 
-**Status: documentation and system design. The application and editable Figma prototype have not been implemented yet.**
+**Status: architecture documented; a complete browser UI/UX review is ready. The Android application has not been implemented. Figma work is partial.**
+
+## Current design review
+
+[Open the UI/UX review guide](design/review/README.md): 84 candidate mobile frames, interactive flow navigation, light and dark themes, compact and large-text layouts. This is the redesigned direction awaiting owner feedback. The Figma Starter connector quota stopped editing after 31 composed frames; the complete set is available in the local browser review.
+
+![Redesigned core screens](design/review/overview.png)
 
 ![Architecture](docs/assets/architecture.png)
 

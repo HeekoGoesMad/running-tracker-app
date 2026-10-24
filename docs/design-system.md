@@ -1,5 +1,7 @@
 # Running Tracker App UI and UX Design System
 
+> This is the original proposed baseline. The owner requested a redesign before Android work. See the [84-frame candidate review](../design/review/README.md) for the revised typography, palette and screen compositions. It awaits owner feedback; the original Word report has not been rewritten as an approved design.
+
 Planning baseline: 24 October 2026. Status: proposed, not implemented.
 
 

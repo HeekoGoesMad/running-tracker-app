@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Design review — viewport checks</title><style>body{margin:24px;background:#171c1f;color:#fff;font:14px system-ui}section{margin:24px 0;width:max-content}iframe{border:1px solid #697a83;height:1000px;display:block;background:#101416}h2{font-size:16px}</style></head>
+<body>
+<h1>Viewport checks</h1><p>Actual embedded browser viewports for the review gallery. Native Android validation remains separate.</p>
+<section><h2>320 px</h2><iframe title="320 pixel review" width="320" src="index.html?qa=1#today-compact"></iframe></section>
+<section><h2>768 px</h2><iframe title="768 pixel review" width="768" src="index.html?qa=1#today"></iframe></section>
+<section><h2>1024 px</h2><iframe title="1024 pixel review" width="1024" src="index.html?qa=1#today"></iframe></section>
+<section><h2>1440 px</h2><iframe title="1440 pixel review" width="1440" src="index.html?qa=1#today"></iframe></section>
+<output id="qa-results" style="white-space:pre-wrap;display:block"></output><script>const reports={};addEventListener('message',e=>{if(e.origin!==location.origin||!e.data.reviewViewport)return;reports[e.data.reviewViewport.viewport]=e.data.reviewViewport;document.getElementById('qa-results').textContent=JSON.stringify(Object.values(reports),null,2);});</script></body></html>

@@ -2,6 +2,8 @@
 
 Baseline: 24 October 2026. Status: proposed. Tasks are tracked in [todo.md](todo.md); no application work is marked complete.
 
+Current review checkpoint: the owner requested all UI/UX frames before Android implementation. [Candidate 02](../design/review/README.md) contains 84 browser-review frames. Figma editing reached its Starter connector limit after 31 composed frames. M0 remains unstarted, and T04–T05 remain incomplete until the design is reviewed and the editable Figma work is finished.
+
 ## Outcome and constraints
 
 Build a personal Android app with reliable GPS capture, local history, generated and adaptive plans, workout guidance, calendar publication, maps, share images and recoverable backups. Use existing hardware with zero additional spending. Release two adds personal heatmaps, GPX import and shoe mileage.

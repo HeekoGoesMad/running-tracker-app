@@ -1,0 +1,5085 @@
+{
+  "version": 2,
+  "status": "candidate for owner review",
+  "baseWidth": 400,
+  "baseHeight": 900,
+  "fonts": {
+    "ui": "Manrope",
+    "numbers": "Roboto Condensed"
+  },
+  "palette": {
+    "dark": {
+      "background": "#101416",
+      "surface": "#1B2124",
+      "raised": "#252D31",
+      "text": "#F3F5EF",
+      "muted": "#ADB8BD",
+      "subtle": "#7F8E95",
+      "line": "#37434A",
+      "strong": "#74848C",
+      "accent": "#D2F77A",
+      "onAccent": "#142019",
+      "accentText": "#D2F77A",
+      "blue": "#A0CDF3",
+      "warning": "#F4D58A",
+      "error": "#FFAEAF",
+      "mapLand": "#192522",
+      "mapRoad": "#46584F",
+      "mapWater": "#172E38"
+    },
+    "light": {
+      "background": "#F4F6F1",
+      "surface": "#FFFFFF",
+      "raised": "#E8EDE5",
+      "text": "#18221C",
+      "muted": "#526359",
+      "subtle": "#617369",
+      "line": "#D0D8CE",
+      "strong": "#71836F",
+      "accent": "#D2F77A",
+      "onAccent": "#142019",
+      "accentText": "#355A17",
+      "blue": "#225F8C",
+      "warning": "#765312",
+      "error": "#9E343B",
+      "mapLand": "#E0E9DC",
+      "mapRoad": "#B2C4AC",
+      "mapWater": "#C7DFE7"
+    }
+  },
+  "screens": [
+    {
+      "id": "welcome",
+      "group": "01 Start",
+      "title": "Make room\nfor your run.",
+      "subtitle": "A personal running journal.",
+      "blocks": [
+        {
+          "kind": "routeArt",
+          "height": 220
+        },
+        {
+          "kind": "text",
+          "value": "Your routes. Your progress. Your pace.",
+          "role": "headline",
+          "color": "text"
+        },
+        {
+          "kind": "text",
+          "value": "Record runs, follow a plan and keep your history on your phone. No account needed.",
+          "role": "body",
+          "color": "muted"
+        },
+        {
+          "kind": "row",
+          "title": "Private by default",
+          "detail": "Your data stays on this device.",
+          "icon": "shield-check",
+          "target": null,
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Set up my running",
+          "target": "profile",
+          "tone": "primary",
+          "icon": "arrow-right"
+        },
+        {
+          "kind": "button",
+          "label": "Restore a backup",
+          "target": "restore",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": null,
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "profile",
+      "group": "01 Start",
+      "title": "Your starting point",
+      "subtitle": "A plan begins with what feels comfortable.",
+      "blocks": [
+        {
+          "kind": "field",
+          "label": "Comfortable run duration",
+          "value": "30 minutes",
+          "target": null
+        },
+        {
+          "kind": "field",
+          "label": "Recent weekly running",
+          "value": "90 minutes",
+          "target": null
+        },
+        {
+          "kind": "field",
+          "label": "Preferred units",
+          "value": "Kilometers · min/km",
+          "target": null
+        },
+        {
+          "kind": "notice",
+          "title": "No recent running history?",
+          "detail": "Start with run–walk. You can change this later.",
+          "tone": "muted",
+          "target": null
+        },
+        {
+          "kind": "choice",
+          "label": "Build a running routine",
+          "detail": "Easy, consistent sessions",
+          "selected": true,
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Continue",
+          "target": "permission",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "welcome",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "permission",
+      "group": "01 Start",
+      "title": "Ready when\nyou are.",
+      "subtitle": "Location is used while recording a run.",
+      "blocks": [
+        {
+          "kind": "routeArt",
+          "height": 160
+        },
+        {
+          "kind": "row",
+          "title": "Precise location",
+          "detail": "Records distance and your route.",
+          "icon": "navigation",
+          "target": null,
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Recording notification",
+          "detail": "Shows pause and stop controls.",
+          "icon": "activity",
+          "target": null,
+          "trailing": null
+        },
+        {
+          "kind": "text",
+          "value": "You choose when recording starts. Calendar access is requested only when you connect a calendar.",
+          "role": "body",
+          "color": "muted"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Enable recording access",
+          "target": "today",
+          "tone": "primary",
+          "icon": null
+        },
+        {
+          "kind": "button",
+          "label": "Explore first",
+          "target": "today-empty",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "profile",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "today",
+      "group": "01 Start",
+      "title": "Today",
+      "subtitle": "SATURDAY, 24 OCTOBER",
+      "blocks": [
+        {
+          "kind": "workout",
+          "title": "Easy run",
+          "minutes": "30",
+          "label": "TODAY’S SESSION",
+          "effort": "Comfortable effort · RPE 2–4",
+          "target": "workout"
+        },
+        {
+          "kind": "section",
+          "value": "This week",
+          "action": "View plan",
+          "target": "plan"
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "2 / 3",
+              "label": "runs completed"
+            },
+            {
+              "value": "62",
+              "label": "minutes"
+            },
+            {
+              "value": "9.8",
+              "label": "kilometers"
+            }
+          ]
+        },
+        {
+          "kind": "chart",
+          "mode": "week",
+          "height": 100
+        },
+        {
+          "kind": "row",
+          "title": "Your last run",
+          "detail": "Thursday · 5.2 km · 32:14",
+          "icon": "route",
+          "target": "activity",
+          "trailing": null
+        },
+        {
+          "kind": "notice",
+          "title": "Keep it comfortable",
+          "detail": "No plan changes today. Your next review is Sunday.",
+          "tone": "muted",
+          "target": "coach"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Start easy run",
+          "target": "pre-run",
+          "tone": "primary",
+          "icon": "play"
+        }
+      ],
+      "nav": "Today",
+      "back": null,
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "today-empty",
+      "group": "01 Start",
+      "title": "Today",
+      "subtitle": "A fresh start.",
+      "blocks": [
+        {
+          "kind": "routeArt",
+          "height": 160
+        },
+        {
+          "kind": "text",
+          "value": "Your first run\nstarts here.",
+          "role": "headline",
+          "color": "text"
+        },
+        {
+          "kind": "text",
+          "value": "Record a run to begin your personal journal. Your pace and route appear after you save it.",
+          "role": "body",
+          "color": "muted"
+        },
+        {
+          "kind": "row",
+          "title": "Create a training plan",
+          "detail": "Choose a goal and the days that fit.",
+          "icon": "calendar-days",
+          "target": "goal",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Import past activities",
+          "detail": "Preview GPX files before saving.",
+          "icon": "file-up",
+          "target": "import",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Record my first run",
+          "target": "pre-run",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": "Today",
+      "back": null,
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "rest-day",
+      "group": "01 Start",
+      "title": "Today",
+      "subtitle": "SUNDAY, 25 OCTOBER",
+      "blocks": [
+        {
+          "kind": "text",
+          "value": "A little space\nto recover.",
+          "role": "headline",
+          "color": "text"
+        },
+        {
+          "kind": "routeArt",
+          "height": 120
+        },
+        {
+          "kind": "notice",
+          "title": "Rest day",
+          "detail": "Your next easy run is Tuesday. Missed sessions are never stacked onto today.",
+          "tone": "muted",
+          "target": null
+        },
+        {
+          "kind": "section",
+          "value": "Your week",
+          "action": null,
+          "target": null
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "3 / 3",
+              "label": "runs completed"
+            },
+            {
+              "value": "94",
+              "label": "minutes"
+            },
+            {
+              "value": "14.6",
+              "label": "kilometers"
+            }
+          ]
+        },
+        {
+          "kind": "row",
+          "title": "Review this week",
+          "detail": "Check your plan and feedback.",
+          "icon": "calendar-days",
+          "target": "coach",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "View next workout",
+          "target": "workout",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": "Today",
+      "back": null,
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "pre-run",
+      "group": "02 Record",
+      "title": "Ready to run",
+      "subtitle": "GPS ready · Precise location",
+      "blocks": [
+        {
+          "kind": "map",
+          "height": 240
+        },
+        {
+          "kind": "row",
+          "title": "Easy run · 30 min",
+          "detail": "Comfortable effort · RPE 2–4",
+          "icon": "activity",
+          "target": "workout",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Riverside loop",
+          "detail": "5.2 km · Saved route",
+          "icon": "route",
+          "target": "routes",
+          "trailing": null
+        },
+        {
+          "kind": "toggle",
+          "label": "Workout voice cues",
+          "detail": "Uses an available offline voice.",
+          "on": true
+        },
+        {
+          "kind": "notice",
+          "title": "Your recording stays local",
+          "detail": "Background recording remains visible in your notifications.",
+          "tone": "muted",
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Start recording",
+          "target": "record",
+          "tone": "primary",
+          "icon": "play"
+        }
+      ],
+      "nav": null,
+      "back": "today",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "gps-weak",
+      "group": "02 Record",
+      "title": "Finding GPS",
+      "subtitle": "Weak signal",
+      "blocks": [
+        {
+          "kind": "map",
+          "height": 190,
+          "quality": "weak"
+        },
+        {
+          "kind": "notice",
+          "title": "Move into open space",
+          "detail": "A clear view of the sky usually improves location. Distance and pace stay unavailable until a reliable fix arrives.",
+          "tone": "warning",
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Easy run · 30 min",
+          "detail": "Your selected workout is ready.",
+          "icon": "activity",
+          "target": "workout",
+          "trailing": null
+        },
+        {
+          "kind": "text",
+          "value": "You can start the workout timer now; the app will mark any missing route section.",
+          "role": "body",
+          "color": "muted"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Start timer anyway",
+          "target": "record-weak",
+          "tone": "primary",
+          "icon": null
+        },
+        {
+          "kind": "button",
+          "label": "Keep waiting",
+          "target": "pre-run",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "today",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "location-denied",
+      "group": "02 Record",
+      "title": "Location is off",
+      "subtitle": "Recording needs precise location.",
+      "blocks": [
+        {
+          "kind": "routeArt",
+          "height": 140
+        },
+        {
+          "kind": "notice",
+          "title": "Allow location to record a route",
+          "detail": "Enable precise location in Android settings, then return here. Your training plan is still available.",
+          "tone": "warning",
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Explore your plan",
+          "detail": "Continue without route recording.",
+          "icon": "calendar-days",
+          "target": "plan",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Review permission",
+          "target": "permission",
+          "tone": "primary",
+          "icon": null
+        },
+        {
+          "kind": "button",
+          "label": "Back to Today",
+          "target": "today",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "today",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "record",
+      "group": "02 Record",
+      "title": "Easy run",
+      "subtitle": "RECORDING · GPS READY",
+      "blocks": [
+        {
+          "kind": "clock",
+          "value": "24:18",
+          "label": "ACTIVE TIME"
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "3.84",
+              "label": "distance · km"
+            },
+            {
+              "value": "6:20",
+              "label": "average · /km"
+            }
+          ]
+        },
+        {
+          "kind": "segments",
+          "options": [
+            "Metrics",
+            "Map"
+          ],
+          "selected": 0,
+          "targets": [
+            "record",
+            "record-map"
+          ]
+        },
+        {
+          "kind": "interval",
+          "label": "EASY EFFORT",
+          "value": "Keep it conversational.",
+          "detail": "5:42 remaining in this session"
+        },
+        {
+          "kind": "row",
+          "title": "Voice cues on",
+          "detail": "Next update at 25 minutes.",
+          "icon": "volume-2",
+          "target": "cues",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Pause run",
+          "target": "paused",
+          "tone": "primary",
+          "icon": "pause"
+        }
+      ],
+      "nav": null,
+      "back": null,
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "record-map",
+      "group": "02 Record",
+      "title": "Easy run",
+      "subtitle": "RECORDING · GPS READY",
+      "blocks": [
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "24:18",
+              "label": "active time"
+            },
+            {
+              "value": "3.84",
+              "label": "distance · km"
+            }
+          ]
+        },
+        {
+          "kind": "segments",
+          "options": [
+            "Metrics",
+            "Map"
+          ],
+          "selected": 1,
+          "targets": [
+            "record",
+            "record-map"
+          ]
+        },
+        {
+          "kind": "map",
+          "height": 350,
+          "following": true
+        },
+        {
+          "kind": "text",
+          "value": "Following Riverside loop · 1.4 km remaining",
+          "role": "small",
+          "color": "muted"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Pause run",
+          "target": "paused",
+          "tone": "primary",
+          "icon": "pause"
+        }
+      ],
+      "nav": null,
+      "back": null,
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "record-weak",
+      "group": "02 Record",
+      "title": "Easy run",
+      "subtitle": "RECORDING · WEAK GPS",
+      "blocks": [
+        {
+          "kind": "clock",
+          "value": "04:12",
+          "label": "ACTIVE TIME"
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "—",
+              "label": "distance · km"
+            },
+            {
+              "value": "—",
+              "label": "average · /km"
+            }
+          ]
+        },
+        {
+          "kind": "notice",
+          "title": "Your timer is still running",
+          "detail": "Route and distance need a reliable GPS signal. Missing sections will be marked in your activity.",
+          "tone": "warning",
+          "target": null
+        },
+        {
+          "kind": "interval",
+          "label": "EASY EFFORT",
+          "value": "Stay comfortable.",
+          "detail": "25:48 remaining"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Pause run",
+          "target": "paused",
+          "tone": "primary",
+          "icon": "pause"
+        }
+      ],
+      "nav": null,
+      "back": null,
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "interval",
+      "group": "02 Record",
+      "title": "Intervals",
+      "subtitle": "RECORDING · REP 2 OF 4",
+      "blocks": [
+        {
+          "kind": "clock",
+          "value": "00:42",
+          "label": "WORK INTERVAL REMAINING"
+        },
+        {
+          "kind": "text",
+          "value": "Run at a controlled effort.",
+          "role": "headline",
+          "color": "text"
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "15:18",
+              "label": "active time"
+            },
+            {
+              "value": "2.31",
+              "label": "distance · km"
+            }
+          ]
+        },
+        {
+          "kind": "interval",
+          "label": "UP NEXT",
+          "value": "2 min easy recovery",
+          "detail": "Rep 3 starts after recovery"
+        },
+        {
+          "kind": "row",
+          "title": "Workout steps",
+          "detail": "Warm-up · 4 repeats · Cool-down",
+          "icon": "activity",
+          "target": "workout",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Pause workout",
+          "target": "paused",
+          "tone": "primary",
+          "icon": "pause"
+        }
+      ],
+      "nav": null,
+      "back": null,
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "paused",
+      "group": "02 Record",
+      "title": "Run paused",
+      "subtitle": "Your route is saved up to this point.",
+      "blocks": [
+        {
+          "kind": "clock",
+          "value": "24:18",
+          "label": "ACTIVE TIME"
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "3.84",
+              "label": "distance · km"
+            },
+            {
+              "value": "6:20",
+              "label": "average · /km"
+            }
+          ]
+        },
+        {
+          "kind": "map",
+          "height": 180
+        },
+        {
+          "kind": "text",
+          "value": "Resume starts a new active section. Paused time does not count toward average pace.",
+          "role": "body",
+          "color": "muted"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Resume run",
+          "target": "record",
+          "tone": "primary",
+          "icon": "play"
+        },
+        {
+          "kind": "button",
+          "label": "Finish run",
+          "target": "finish",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": null,
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "finish",
+      "group": "02 Record",
+      "title": "Save your run",
+      "subtitle": "SATURDAY · 24 OCTOBER",
+      "blocks": [
+        {
+          "kind": "map",
+          "height": 200
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "3.84",
+              "label": "distance · km"
+            },
+            {
+              "value": "24:18",
+              "label": "active time"
+            },
+            {
+              "value": "6:20",
+              "label": "average · /km"
+            }
+          ]
+        },
+        {
+          "kind": "field",
+          "label": "Activity title",
+          "value": "Saturday easy run",
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "GPS quality",
+          "detail": "Good coverage · No gaps",
+          "icon": "signal",
+          "target": "quality",
+          "trailing": null
+        },
+        {
+          "kind": "text",
+          "value": "Your run will be saved on this phone.",
+          "role": "small",
+          "color": "muted"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Save run",
+          "target": "check-in",
+          "tone": "primary",
+          "icon": null
+        },
+        {
+          "kind": "button",
+          "label": "Keep recording",
+          "target": "paused",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "paused",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "recovery",
+      "group": "02 Record",
+      "title": "Your run is safe.",
+      "subtitle": "Recording was interrupted.",
+      "blocks": [
+        {
+          "kind": "notice",
+          "title": "Last saved at 08:42",
+          "detail": "24:18 of active time and 3.84 km were saved. The missing section will be marked.",
+          "tone": "warning",
+          "target": null
+        },
+        {
+          "kind": "map",
+          "height": 200,
+          "quality": "gap"
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "24:18",
+              "label": "saved active time"
+            },
+            {
+              "value": "3.84",
+              "label": "saved km"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "value": "Resume creates a new route section. It never draws a line through the interruption.",
+          "role": "body",
+          "color": "muted"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Resume saved run",
+          "target": "record",
+          "tone": "primary",
+          "icon": null
+        },
+        {
+          "kind": "button",
+          "label": "Save partial run",
+          "target": "finish",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": null,
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "check-in",
+      "group": "02 Record",
+      "title": "How did it feel?",
+      "subtitle": "A quick check-in helps your next plan review.",
+      "blocks": [
+        {
+          "kind": "section",
+          "value": "Effort",
+          "action": null,
+          "target": null
+        },
+        {
+          "kind": "rating",
+          "labels": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+          ],
+          "selected": 2
+        },
+        {
+          "kind": "text",
+          "value": "3 · Comfortable, full sentences",
+          "role": "small",
+          "color": "muted"
+        },
+        {
+          "kind": "section",
+          "value": "Fatigue",
+          "action": null,
+          "target": null
+        },
+        {
+          "kind": "segments",
+          "options": [
+            "Low",
+            "Moderate",
+            "High"
+          ],
+          "selected": 0
+        },
+        {
+          "kind": "section",
+          "value": "Any discomfort?",
+          "action": null,
+          "target": null
+        },
+        {
+          "kind": "choice",
+          "label": "None",
+          "detail": "",
+          "selected": true,
+          "target": null
+        },
+        {
+          "kind": "choice",
+          "label": "Mild",
+          "detail": "",
+          "selected": false,
+          "target": null
+        },
+        {
+          "kind": "choice",
+          "label": "Moderate or severe",
+          "detail": "",
+          "selected": false,
+          "target": null
+        },
+        {
+          "kind": "text",
+          "value": "You can skip. Missing answers stay unknown.",
+          "role": "small",
+          "color": "muted"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Save check-in",
+          "target": "saved",
+          "tone": "primary",
+          "icon": null
+        },
+        {
+          "kind": "button",
+          "label": "Skip for now",
+          "target": "saved",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "finish",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "saved",
+      "group": "02 Record",
+      "title": "Run saved",
+      "subtitle": "Your journal is one run richer.",
+      "blocks": [
+        {
+          "kind": "success",
+          "value": "Nice and steady."
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "3.84",
+              "label": "distance · km"
+            },
+            {
+              "value": "24:18",
+              "label": "active time"
+            },
+            {
+              "value": "6:20",
+              "label": "average · /km"
+            }
+          ]
+        },
+        {
+          "kind": "row",
+          "title": "View activity",
+          "detail": "Route, splits and notes",
+          "icon": "route",
+          "target": "activity",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Create a share image",
+          "detail": "Choose exactly what appears.",
+          "icon": "share-2",
+          "target": "share",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Export to Strava",
+          "detail": "Save a GPX file for manual upload.",
+          "icon": "download",
+          "target": "strava",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Back to Today",
+          "target": "today",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "activity",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "history",
+      "group": "03 Journal",
+      "title": "Activities",
+      "subtitle": "Your personal running journal.",
+      "blocks": [
+        {
+          "kind": "segments",
+          "options": [
+            "All runs",
+            "Easy",
+            "Intervals"
+          ],
+          "selected": 0
+        },
+        {
+          "kind": "section",
+          "value": "October 2026",
+          "action": null,
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Saturday easy run",
+          "detail": "24 Oct · 3.84 km · 24:18",
+          "icon": "route",
+          "target": "activity",
+          "trailing": "6:20 /km"
+        },
+        {
+          "kind": "row",
+          "title": "Riverside easy run",
+          "detail": "22 Oct · 5.20 km · 32:14",
+          "icon": "route",
+          "target": "activity",
+          "trailing": "6:12 /km"
+        },
+        {
+          "kind": "row",
+          "title": "Short intervals",
+          "detail": "20 Oct · 4.60 km · 30:00",
+          "icon": "activity",
+          "target": "workout",
+          "trailing": null
+        },
+        {
+          "kind": "section",
+          "value": "September 2026",
+          "action": null,
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Sunday long run",
+          "detail": "27 Sep · 7.10 km · 46:12",
+          "icon": "route",
+          "target": "activity",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Import activity files",
+          "detail": "GPX files are checked before saving.",
+          "icon": "file-up",
+          "target": "import",
+          "trailing": null
+        }
+      ],
+      "actions": [],
+      "nav": "Progress",
+      "back": "progress",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "activity",
+      "group": "03 Journal",
+      "title": "Saturday easy run",
+      "subtitle": "24 OCTOBER · 08:18",
+      "blocks": [
+        {
+          "kind": "map",
+          "height": 230
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "3.84",
+              "label": "distance · km"
+            },
+            {
+              "value": "24:18",
+              "label": "active time"
+            },
+            {
+              "value": "6:20",
+              "label": "average · /km"
+            }
+          ]
+        },
+        {
+          "kind": "segments",
+          "options": [
+            "Overview",
+            "Splits"
+          ],
+          "selected": 0,
+          "targets": [
+            "activity",
+            "splits"
+          ]
+        },
+        {
+          "kind": "row",
+          "title": "Effort 3 · Comfortable",
+          "detail": "Fatigue low · No discomfort",
+          "icon": "activity",
+          "target": "check-in",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Good GPS coverage",
+          "detail": "No recording gaps",
+          "icon": "signal",
+          "target": "quality",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Workout completed",
+          "detail": "24 of 30 planned minutes",
+          "icon": "calendar-days",
+          "target": "workout",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Export activity file",
+          "detail": "GPX for manual Strava upload",
+          "icon": "download",
+          "target": "strava",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Create share image",
+          "target": "share",
+          "tone": "primary",
+          "icon": "share-2"
+        }
+      ],
+      "nav": null,
+      "back": "history",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "splits",
+      "group": "03 Journal",
+      "title": "Run splits",
+      "subtitle": "Saturday easy run",
+      "blocks": [
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "3.84",
+              "label": "distance · km"
+            },
+            {
+              "value": "6:20",
+              "label": "average · /km"
+            }
+          ]
+        },
+        {
+          "kind": "segments",
+          "options": [
+            "Overview",
+            "Splits"
+          ],
+          "selected": 1,
+          "targets": [
+            "activity",
+            "splits"
+          ]
+        },
+        {
+          "kind": "splits",
+          "values": [
+            [
+              "1",
+              "6:28",
+              "6:28"
+            ],
+            [
+              "2",
+              "6:16",
+              "12:44"
+            ],
+            [
+              "3",
+              "6:18",
+              "19:02"
+            ],
+            [
+              "0.84",
+              "6:16",
+              "24:18"
+            ]
+          ]
+        },
+        {
+          "kind": "text",
+          "value": "Last split is partial. Pace uses active time and accepted GPS distance.",
+          "role": "body",
+          "color": "muted"
+        }
+      ],
+      "actions": [],
+      "nav": null,
+      "back": "activity",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "progress",
+      "group": "03 Journal",
+      "title": "Progress",
+      "subtitle": "Consistency, one week at a time.",
+      "blocks": [
+        {
+          "kind": "segments",
+          "options": [
+            "Week",
+            "Month",
+            "All"
+          ],
+          "selected": 0,
+          "targets": [
+            "progress",
+            "progress-month",
+            "progress-month"
+          ]
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "14.6",
+              "label": "kilometers"
+            },
+            {
+              "value": "94",
+              "label": "minutes"
+            },
+            {
+              "value": "3",
+              "label": "runs"
+            }
+          ]
+        },
+        {
+          "kind": "chart",
+          "mode": "trend",
+          "height": 220
+        },
+        {
+          "kind": "notice",
+          "title": "A steady month",
+          "detail": "You completed 10 of 12 planned runs. Based on saved activities, not a performance prediction.",
+          "tone": "muted",
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Activity journal",
+          "detail": "Routes, splits and notes",
+          "icon": "route",
+          "target": "history",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Your shoes",
+          "detail": "See accumulated mileage.",
+          "icon": "footprints",
+          "target": "shoes",
+          "trailing": null
+        }
+      ],
+      "actions": [],
+      "nav": "Progress",
+      "back": null,
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "progress-month",
+      "group": "03 Journal",
+      "title": "Progress",
+      "subtitle": "OCTOBER 2026",
+      "blocks": [
+        {
+          "kind": "segments",
+          "options": [
+            "Week",
+            "Month",
+            "All"
+          ],
+          "selected": 1,
+          "targets": [
+            "progress",
+            "progress-month",
+            "progress-month"
+          ]
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "48.2",
+              "label": "kilometers"
+            },
+            {
+              "value": "311",
+              "label": "minutes"
+            },
+            {
+              "value": "10",
+              "label": "runs"
+            }
+          ]
+        },
+        {
+          "kind": "chart",
+          "mode": "month",
+          "height": 220
+        },
+        {
+          "kind": "section",
+          "value": "Training rhythm",
+          "action": null,
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "10 of 12 planned runs",
+          "detail": "Completed this month",
+          "icon": "check-check",
+          "target": "plan",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Personal route heatmap",
+          "detail": "See where you return most.",
+          "icon": "layers",
+          "target": "heatmap",
+          "trailing": null
+        }
+      ],
+      "actions": [],
+      "nav": "Progress",
+      "back": null,
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "quality",
+      "group": "03 Journal",
+      "title": "GPS quality",
+      "subtitle": "Keep estimates in perspective.",
+      "blocks": [
+        {
+          "kind": "notice",
+          "title": "Good coverage",
+          "detail": "98% of active time has continuous accepted location. This is an app quality indicator, not a surveyed accuracy score.",
+          "tone": "muted",
+          "target": null
+        },
+        {
+          "kind": "map",
+          "height": 230,
+          "quality": "gap"
+        },
+        {
+          "kind": "row",
+          "title": "Accepted location coverage",
+          "detail": "98% of active recording time",
+          "icon": "signal",
+          "target": null,
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Recording interruptions",
+          "detail": "One gap · Shown as a break",
+          "icon": "triangle-alert",
+          "target": null,
+          "trailing": null
+        },
+        {
+          "kind": "text",
+          "value": "Unreliable sections do not qualify for a personal best or trigger harder training. Your original samples are retained locally.",
+          "role": "body",
+          "color": "muted"
+        }
+      ],
+      "actions": [],
+      "nav": null,
+      "back": "activity",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "plan",
+      "group": "04 Training",
+      "title": "Your plan",
+      "subtitle": "WEEK 3 · BUILD A ROUTINE",
+      "blocks": [
+        {
+          "kind": "week",
+          "selected": 5
+        },
+        {
+          "kind": "workout",
+          "title": "Easy run",
+          "minutes": "30",
+          "label": "SATURDAY · TODAY",
+          "effort": "Comfortable effort · RPE 2–4",
+          "target": "workout"
+        },
+        {
+          "kind": "row",
+          "title": "Tuesday · Easy run",
+          "detail": "30 min · Completed",
+          "icon": "check-check",
+          "target": "activity",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Thursday · Easy run",
+          "detail": "32 min · Completed",
+          "icon": "check-check",
+          "target": "activity",
+          "trailing": null
+        },
+        {
+          "kind": "notice",
+          "title": "Weekly review is ready",
+          "detail": "Your feedback suggests keeping next week steady.",
+          "tone": "muted",
+          "target": "coach"
+        },
+        {
+          "kind": "row",
+          "title": "Calendar",
+          "detail": "3 workouts scheduled",
+          "icon": "calendar-days",
+          "target": "calendar",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Review next week",
+          "target": "coach",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": "Plan",
+      "back": null,
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "goal",
+      "group": "04 Training",
+      "title": "What are you\nrunning toward?",
+      "subtitle": "You can adjust your goal later.",
+      "blocks": [
+        {
+          "kind": "choice",
+          "label": "Build a routine",
+          "detail": "Consistent easy sessions",
+          "selected": true,
+          "target": "days"
+        },
+        {
+          "kind": "choice",
+          "label": "Complete 5K",
+          "detail": "Run or run–walk at a comfortable effort",
+          "selected": false,
+          "target": "days"
+        },
+        {
+          "kind": "choice",
+          "label": "Complete 10K",
+          "detail": "Build from your current comfortable duration",
+          "selected": false,
+          "target": "days"
+        },
+        {
+          "kind": "choice",
+          "label": "Improve my 5K or 10K",
+          "detail": "Uses your recent, reliable running history",
+          "selected": false,
+          "target": "days"
+        },
+        {
+          "kind": "row",
+          "title": "Build my own program",
+          "detail": "Choose workouts manually.",
+          "icon": "plus",
+          "target": "editor",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Choose training days",
+          "target": "days",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "plan",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "days",
+      "group": "04 Training",
+      "title": "Make it fit.",
+      "subtitle": "Choose the days you usually have time.",
+      "blocks": [
+        {
+          "kind": "week",
+          "selected": [
+            1,
+            3,
+            5
+          ],
+          "multi": true
+        },
+        {
+          "kind": "field",
+          "label": "Weekday session budget",
+          "value": "30 minutes",
+          "target": null
+        },
+        {
+          "kind": "field",
+          "label": "Longer session budget",
+          "value": "45 minutes",
+          "target": null
+        },
+        {
+          "kind": "field",
+          "label": "Preferred time",
+          "value": "07:00",
+          "target": null
+        },
+        {
+          "kind": "notice",
+          "title": "Space for recovery",
+          "detail": "Hard workouts are never placed on consecutive days. Missing sessions are not added to another day.",
+          "tone": "muted",
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Starting point",
+          "detail": "30 min comfortable run · 90 min recent week",
+          "icon": "activity",
+          "target": "profile",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Preview my plan",
+          "target": "plan-preview",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "goal",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "plan-preview",
+      "group": "04 Training",
+      "title": "Your first four weeks",
+      "subtitle": "Review before activating.",
+      "blocks": [
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "3",
+              "label": "runs / week"
+            },
+            {
+              "value": "90",
+              "label": "minutes / week"
+            }
+          ]
+        },
+        {
+          "kind": "chart",
+          "mode": "plan",
+          "height": 150
+        },
+        {
+          "kind": "row",
+          "title": "Tuesday · Easy run",
+          "detail": "27 min · Comfortable effort",
+          "icon": "activity",
+          "target": "workout",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Thursday · Easy run",
+          "detail": "27 min · Comfortable effort",
+          "icon": "activity",
+          "target": "workout",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Saturday · Longer easy run",
+          "detail": "36 min · Stay conversational",
+          "icon": "route",
+          "target": "workout",
+          "trailing": null
+        },
+        {
+          "kind": "notice",
+          "title": "A starting plan, not a prediction",
+          "detail": "The rules review your completed runs and check-ins. Future changes always need your approval.",
+          "tone": "muted",
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Use this plan",
+          "target": "plan",
+          "tone": "primary",
+          "icon": null
+        },
+        {
+          "kind": "button",
+          "label": "Edit workouts first",
+          "target": "editor",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "days",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "workout",
+      "group": "04 Training",
+      "title": "Easy run",
+      "subtitle": "SATURDAY · 30 MINUTES",
+      "blocks": [
+        {
+          "kind": "workout",
+          "title": "Comfortable and steady.",
+          "minutes": "30",
+          "label": "EASY SESSION",
+          "effort": "RPE 2–4 · Full sentences"
+        },
+        {
+          "kind": "steps",
+          "values": [
+            [
+              "05 min",
+              "Settle in",
+              "Easy walk or very easy jog"
+            ],
+            [
+              "20 min",
+              "Easy run",
+              "Keep a conversational effort"
+            ],
+            [
+              "05 min",
+              "Ease out",
+              "Finish gently"
+            ]
+          ]
+        },
+        {
+          "kind": "row",
+          "title": "Scheduled for 07:00",
+          "detail": "Calendar event is up to date",
+          "icon": "calendar-days",
+          "target": "calendar",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Edit workout",
+          "detail": "Adjust steps or protect this workout.",
+          "icon": "sliders-horizontal",
+          "target": "editor",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Prepare this run",
+          "target": "pre-run",
+          "tone": "primary",
+          "icon": "play"
+        }
+      ],
+      "nav": null,
+      "back": "plan",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "editor",
+      "group": "04 Training",
+      "title": "Edit workout",
+      "subtitle": "Your changes stay under your control.",
+      "blocks": [
+        {
+          "kind": "field",
+          "label": "Workout name",
+          "value": "Saturday easy run",
+          "target": null
+        },
+        {
+          "kind": "field",
+          "label": "Scheduled day",
+          "value": "Saturday · 07:00",
+          "target": null
+        },
+        {
+          "kind": "steps",
+          "values": [
+            [
+              "05 min",
+              "Warm-up",
+              "Easy effort"
+            ],
+            [
+              "20 min",
+              "Run",
+              "Comfortable effort"
+            ],
+            [
+              "05 min",
+              "Cool-down",
+              "Easy effort"
+            ]
+          ]
+        },
+        {
+          "kind": "button",
+          "label": "Add a step",
+          "target": null,
+          "tone": "secondary",
+          "icon": "plus"
+        },
+        {
+          "kind": "toggle",
+          "label": "Protect this workout",
+          "detail": "The coach leaves manual edits unchanged.",
+          "on": true
+        },
+        {
+          "kind": "text",
+          "value": "Total duration · 30 minutes",
+          "role": "body",
+          "color": "muted"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Save workout",
+          "target": "plan",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "workout",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "coach",
+      "group": "04 Training",
+      "title": "A steady week ahead",
+      "subtitle": "Review proposed changes.",
+      "blocks": [
+        {
+          "kind": "notice",
+          "title": "Hold this week steady",
+          "detail": "Two easy runs felt harder than planned. No extra volume is proposed.",
+          "tone": "muted",
+          "target": null
+        },
+        {
+          "kind": "section",
+          "value": "What changes",
+          "action": null,
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Tuesday easy run",
+          "detail": "Keep 30 min · RPE 2–4",
+          "icon": "check",
+          "target": null,
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Thursday easy run",
+          "detail": "Keep 30 min · RPE 2–4",
+          "icon": "check",
+          "target": null,
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Saturday longer run",
+          "detail": "35 min → 30 min · Easy effort",
+          "icon": "arrow-right",
+          "target": null,
+          "trailing": null
+        },
+        {
+          "kind": "section",
+          "value": "Why this suggestion",
+          "action": null,
+          "target": null
+        },
+        {
+          "kind": "text",
+          "value": "Based on 3 completed runs and 2 effort check-ins. One protected workout stays unchanged.",
+          "role": "body",
+          "color": "muted"
+        },
+        {
+          "kind": "row",
+          "title": "See previous reviews",
+          "detail": "Accepted, declined and undone changes",
+          "icon": "activity",
+          "target": "coach-history",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Accept selected changes",
+          "target": "coach-accepted",
+          "tone": "primary",
+          "icon": null
+        },
+        {
+          "kind": "button",
+          "label": "Keep my current plan",
+          "target": "plan",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "plan",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "coach-accepted",
+      "group": "04 Training",
+      "title": "Plan updated",
+      "subtitle": "Your next sessions stay manageable.",
+      "blocks": [
+        {
+          "kind": "success",
+          "value": "A little more breathing room."
+        },
+        {
+          "kind": "notice",
+          "title": "Saturday is now 30 minutes",
+          "detail": "Only the selected future workout changed. Completed runs and protected workouts are unchanged.",
+          "tone": "muted",
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Calendar update pending",
+          "detail": "Your event will be reconciled.",
+          "icon": "calendar-days",
+          "target": "calendar",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Undo this change",
+          "detail": "Restore the previous future workout.",
+          "icon": "arrow-left",
+          "target": "coach-undo",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "View my plan",
+          "target": "plan",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "coach",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "coach-history",
+      "group": "04 Training",
+      "title": "Plan history",
+      "subtitle": "Every change has a reason.",
+      "blocks": [
+        {
+          "kind": "section",
+          "value": "This week",
+          "action": null,
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Kept next week steady",
+          "detail": "24 Oct · Accepted · 1 workout adjusted",
+          "icon": "check",
+          "target": "coach-accepted",
+          "trailing": null
+        },
+        {
+          "kind": "section",
+          "value": "Earlier",
+          "action": null,
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Added 4 easy minutes",
+          "detail": "17 Oct · Accepted · Good feedback coverage",
+          "icon": "trending-up",
+          "target": "coach",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Kept the current plan",
+          "detail": "10 Oct · Declined · Schedule conflict",
+          "icon": "calendar-days",
+          "target": "coach",
+          "trailing": null
+        },
+        {
+          "kind": "notice",
+          "title": "Your manual edits are protected",
+          "detail": "Changes are reviewed against the latest plan before applying.",
+          "tone": "muted",
+          "target": null
+        }
+      ],
+      "actions": [],
+      "nav": null,
+      "back": "coach",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "coach-undo",
+      "group": "04 Training",
+      "title": "Undo this change?",
+      "subtitle": "Review what will be restored.",
+      "blocks": [
+        {
+          "kind": "row",
+          "title": "Saturday easy run",
+          "detail": "30 min → 35 min · Easy effort",
+          "icon": "arrow-right",
+          "target": null,
+          "trailing": null
+        },
+        {
+          "kind": "notice",
+          "title": "Only future workouts are restored",
+          "detail": "Your recorded activities stay unchanged. If this workout was edited again, review the conflict before continuing.",
+          "tone": "muted",
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Undo plan change",
+          "target": "plan",
+          "tone": "primary",
+          "icon": null
+        },
+        {
+          "kind": "button",
+          "label": "Keep the update",
+          "target": "coach-accepted",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "coach-history",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "maps",
+      "group": "05 Routes",
+      "title": "Maps",
+      "subtitle": "A familiar path, ready to follow.",
+      "blocks": [
+        {
+          "kind": "map",
+          "height": 350
+        },
+        {
+          "kind": "segments",
+          "options": [
+            "Saved routes",
+            "Personal heatmap"
+          ],
+          "selected": 0,
+          "targets": [
+            "routes",
+            "heatmap"
+          ]
+        },
+        {
+          "kind": "row",
+          "title": "Riverside loop",
+          "detail": "5.2 km · Saved for offline viewing",
+          "icon": "route",
+          "target": "route-detail",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Popular places to run",
+          "detail": "Open population heatmap in your browser.",
+          "icon": "layers",
+          "target": "population",
+          "trailing": null
+        }
+      ],
+      "actions": [],
+      "nav": "Maps",
+      "back": null,
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "routes",
+      "group": "05 Routes",
+      "title": "Saved routes",
+      "subtitle": "Your own collection.",
+      "blocks": [
+        {
+          "kind": "map",
+          "height": 170
+        },
+        {
+          "kind": "row",
+          "title": "Riverside loop",
+          "detail": "5.2 km · Offline area ready",
+          "icon": "route",
+          "target": "route-detail",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Park circuit",
+          "detail": "3.1 km · Online map",
+          "icon": "route",
+          "target": "route-detail",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Sunday out-and-back",
+          "detail": "7.4 km · Saved geometry",
+          "icon": "route",
+          "target": "route-detail",
+          "trailing": null
+        },
+        {
+          "kind": "notice",
+          "title": "A route is a guide",
+          "detail": "Follow the visible line. Turn-by-turn directions and route generation are outside this release.",
+          "tone": "muted",
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Choose Riverside loop",
+          "target": "pre-run",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "maps",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "route-detail",
+      "group": "05 Routes",
+      "title": "Riverside loop",
+      "subtitle": "Saved from your activity",
+      "blocks": [
+        {
+          "kind": "map",
+          "height": 320,
+          "following": true
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "5.2",
+              "label": "kilometers"
+            },
+            {
+              "value": "Loop",
+              "label": "route shape"
+            }
+          ]
+        },
+        {
+          "kind": "row",
+          "title": "Offline map area",
+          "detail": "Ready · Saved on this device",
+          "icon": "download",
+          "target": "offline",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "View source activity",
+          "detail": "Route, splits and notes",
+          "icon": "activity",
+          "target": "activity",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Use this route",
+          "target": "pre-run",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "routes",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "offline",
+      "group": "05 Routes",
+      "title": "Take the map along",
+      "subtitle": "Riverside loop",
+      "blocks": [
+        {
+          "kind": "map",
+          "height": 270,
+          "area": true
+        },
+        {
+          "kind": "row",
+          "title": "Selected map area",
+          "detail": "Around the saved route",
+          "icon": "map",
+          "target": null,
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Estimated download",
+          "detail": "18 MB · Standard detail",
+          "icon": "download",
+          "target": null,
+          "trailing": null
+        },
+        {
+          "kind": "notice",
+          "title": "Download before heading out",
+          "detail": "The app checks provider limits and includes style, font and map resources. Recording works even if a basemap is unavailable.",
+          "tone": "muted",
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Download selected area",
+          "target": "offline-ready",
+          "tone": "primary",
+          "icon": null
+        },
+        {
+          "kind": "button",
+          "label": "Use route only",
+          "target": "pre-run",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "route-detail",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "offline-ready",
+      "group": "05 Routes",
+      "title": "Map ready offline",
+      "subtitle": "Riverside loop",
+      "blocks": [
+        {
+          "kind": "map",
+          "height": 270
+        },
+        {
+          "kind": "notice",
+          "title": "Download complete",
+          "detail": "Required map resources were checked. This area is stored on your phone.",
+          "tone": "success",
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Storage used",
+          "detail": "18 MB",
+          "icon": "download",
+          "target": null,
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Manage saved areas",
+          "detail": "Remove areas you no longer need.",
+          "icon": "map",
+          "target": "settings",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Use this route",
+          "target": "pre-run",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "route-detail",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "population",
+      "group": "05 Routes",
+      "title": "Explore popular paths",
+      "subtitle": "Opens an external heatmap.",
+      "blocks": [
+        {
+          "kind": "map",
+          "height": 200,
+          "heat": true
+        },
+        {
+          "kind": "notice",
+          "title": "Population heatmap",
+          "detail": "View running, walking or cycling popularity in the provider’s browser experience. Its login and access rules apply.",
+          "tone": "muted",
+          "target": null
+        },
+        {
+          "kind": "text",
+          "value": "This app does not embed a population-heatmap API or copy its tiles. Your own activity data is not uploaded by opening the page.",
+          "role": "body",
+          "color": "muted"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Open external heatmap",
+          "target": null,
+          "tone": "primary",
+          "icon": null
+        },
+        {
+          "kind": "button",
+          "label": "View my own heatmap",
+          "target": "heatmap",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "maps",
+      "note": "External destination is intentionally not opened by the review prototype.",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "share",
+      "group": "06 Share",
+      "title": "Make it yours.",
+      "subtitle": "Choose a share-image template.",
+      "blocks": [
+        {
+          "kind": "templateGrid"
+        },
+        {
+          "kind": "section",
+          "value": "Share what matters",
+          "action": null,
+          "target": null
+        },
+        {
+          "kind": "text",
+          "value": "Select a template, then choose the route and numbers you want to include. All templates are available.",
+          "role": "body",
+          "color": "muted"
+        },
+        {
+          "kind": "row",
+          "title": "Route + stats",
+          "detail": "A transparent outline with your key numbers",
+          "icon": "route",
+          "target": "share-compose",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Stats only",
+          "detail": "Keep your route private",
+          "icon": "activity",
+          "target": "share-stats",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Photo + stats",
+          "detail": "Use a photo from your phone",
+          "icon": "plus",
+          "target": "share-photo",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Customize route + stats",
+          "target": "share-compose",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "activity",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "share-compose",
+      "group": "06 Share",
+      "title": "Share activity",
+      "subtitle": "Route + stats · Transparent",
+      "blocks": [
+        {
+          "kind": "sharePreview",
+          "template": "route",
+          "height": 320
+        },
+        {
+          "kind": "segments",
+          "options": [
+            "Template",
+            "Data",
+            "Privacy"
+          ],
+          "selected": 0,
+          "targets": [
+            "share",
+            "share-fields",
+            "share-privacy"
+          ]
+        },
+        {
+          "kind": "row",
+          "title": "Story · 9:16",
+          "detail": "1080 × 1920 PNG",
+          "icon": "layers",
+          "target": "share-preview",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Foreground · White",
+          "detail": "Lime route · Transparent background",
+          "icon": "sliders-horizontal",
+          "target": "share-style",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Preview export",
+          "target": "share-preview",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "share",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "share-fields",
+      "group": "06 Share",
+      "title": "Choose your data",
+      "subtitle": "Only selected fields appear in the image.",
+      "blocks": [
+        {
+          "kind": "sharePreview",
+          "template": "stats",
+          "height": 220
+        },
+        {
+          "kind": "toggle",
+          "label": "Distance",
+          "detail": "3.84 km",
+          "on": true
+        },
+        {
+          "kind": "toggle",
+          "label": "Active time",
+          "detail": "24:18",
+          "on": true
+        },
+        {
+          "kind": "toggle",
+          "label": "Average pace",
+          "detail": "6:20 /km",
+          "on": true
+        },
+        {
+          "kind": "toggle",
+          "label": "Activity title",
+          "detail": "Saturday easy run",
+          "on": false
+        },
+        {
+          "kind": "toggle",
+          "label": "Date",
+          "detail": "24 October 2026",
+          "on": false
+        },
+        {
+          "kind": "toggle",
+          "label": "App name",
+          "detail": "Optional branding",
+          "on": false
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Apply selected data",
+          "target": "share-compose",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "share-compose",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "share-privacy",
+      "group": "06 Share",
+      "title": "Protect your route",
+      "subtitle": "Preview what leaves your phone.",
+      "blocks": [
+        {
+          "kind": "map",
+          "height": 210,
+          "quality": "trim"
+        },
+        {
+          "kind": "choice",
+          "label": "Trim start and finish",
+          "detail": "Hide the first and last 200 meters",
+          "selected": true,
+          "target": null
+        },
+        {
+          "kind": "choice",
+          "label": "Hide the entire route",
+          "detail": "Share your numbers only",
+          "selected": false,
+          "target": "share-stats"
+        },
+        {
+          "kind": "choice",
+          "label": "Show the complete route",
+          "detail": "May reveal your start and finish",
+          "selected": false,
+          "target": null
+        },
+        {
+          "kind": "notice",
+          "title": "This only changes the share image",
+          "detail": "Your original activity stays unchanged. Location names and date are off by default.",
+          "tone": "muted",
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Apply route privacy",
+          "target": "share-compose",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "share-compose",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "share-style",
+      "group": "06 Share",
+      "title": "Style the image",
+      "subtitle": "Keep it readable on any background.",
+      "blocks": [
+        {
+          "kind": "sharePreview",
+          "template": "route",
+          "height": 240
+        },
+        {
+          "kind": "section",
+          "value": "Foreground",
+          "action": null,
+          "target": null
+        },
+        {
+          "kind": "swatches",
+          "values": [
+            "White",
+            "Graphite",
+            "Lime"
+          ]
+        },
+        {
+          "kind": "section",
+          "value": "Background",
+          "action": null,
+          "target": null
+        },
+        {
+          "kind": "segments",
+          "options": [
+            "Transparent",
+            "Solid",
+            "Photo"
+          ],
+          "selected": 0,
+          "targets": [
+            "share-compose",
+            "share-stats",
+            "share-photo"
+          ]
+        },
+        {
+          "kind": "notice",
+          "title": "Checkerboard means transparent",
+          "detail": "It is not included in the exported PNG. Preview on light and dark backgrounds before sharing.",
+          "tone": "muted",
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Apply style",
+          "target": "share-compose",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "share-compose",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "share-stats",
+      "group": "06 Share",
+      "title": "Keep the numbers.",
+      "subtitle": "Stats-only template",
+      "blocks": [
+        {
+          "kind": "sharePreview",
+          "template": "stats",
+          "height": 350
+        },
+        {
+          "kind": "row",
+          "title": "Route hidden",
+          "detail": "No route geometry appears in this image.",
+          "icon": "shield-check",
+          "target": "share-privacy",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Choose data",
+          "detail": "Distance · Time · Average pace",
+          "icon": "sliders-horizontal",
+          "target": "share-fields",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Preview export",
+          "target": "share-preview",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "share",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "share-receipt",
+      "group": "06 Share",
+      "title": "A small memento.",
+      "subtitle": "Receipt template",
+      "blocks": [
+        {
+          "kind": "sharePreview",
+          "template": "receipt",
+          "height": 350
+        },
+        {
+          "kind": "row",
+          "title": "Choose data",
+          "detail": "Distance · Time · Average pace",
+          "icon": "sliders-horizontal",
+          "target": "share-fields",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Change template",
+          "detail": "Route · Stats · Photo",
+          "icon": "layers",
+          "target": "share",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Preview export",
+          "target": "share-preview",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "share",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "share-photo",
+      "group": "06 Share",
+      "title": "Your run, your view.",
+      "subtitle": "Photo + stats template",
+      "blocks": [
+        {
+          "kind": "sharePreview",
+          "template": "photo",
+          "height": 330
+        },
+        {
+          "kind": "row",
+          "title": "Choose a photo",
+          "detail": "Android photo picker opens in the app.",
+          "icon": "plus",
+          "target": null,
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Adjust crop and contrast",
+          "detail": "Keep the numbers legible.",
+          "icon": "sliders-horizontal",
+          "target": "share-style",
+          "trailing": null
+        },
+        {
+          "kind": "notice",
+          "title": "Photo metadata is not exported",
+          "detail": "Only the rendered image and selected fields are included.",
+          "tone": "muted",
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Preview export",
+          "target": "share-preview",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "share",
+      "note": "The review uses an original vector landscape, not a personal photo.",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "share-preview",
+      "group": "06 Share",
+      "title": "Ready to share",
+      "subtitle": "Story · 1080 × 1920 · PNG",
+      "blocks": [
+        {
+          "kind": "sharePreview",
+          "template": "route",
+          "height": 360
+        },
+        {
+          "kind": "row",
+          "title": "Included",
+          "detail": "Distance · Active time · Average pace",
+          "icon": "check",
+          "target": null,
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Route privacy",
+          "detail": "First and last 200 m hidden",
+          "icon": "shield-check",
+          "target": "share-privacy",
+          "trailing": null
+        },
+        {
+          "kind": "text",
+          "value": "Receiving apps may flatten transparency. Keep the saved PNG as your original.",
+          "role": "small",
+          "color": "muted"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Share image",
+          "target": "share-targets",
+          "tone": "primary",
+          "icon": "share-2"
+        },
+        {
+          "kind": "button",
+          "label": "Save PNG",
+          "target": "share-saved",
+          "tone": "secondary",
+          "icon": "download"
+        }
+      ],
+      "nav": null,
+      "back": "share-compose",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "share-targets",
+      "group": "06 Share",
+      "title": "Share your image",
+      "subtitle": "Choose an installed app.",
+      "blocks": [
+        {
+          "kind": "sharePreview",
+          "template": "route",
+          "height": 220
+        },
+        {
+          "kind": "notice",
+          "title": "Android share sheet",
+          "detail": "Installed destinations appear here in the native app. No public activity link is created.",
+          "tone": "muted",
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Instagram",
+          "detail": "Share image or add to your story.",
+          "icon": "share-2",
+          "target": "share-saved",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "WhatsApp",
+          "detail": "Send the image to a contact.",
+          "icon": "share-2",
+          "target": "share-saved",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "More apps",
+          "detail": "Use Android’s installed destinations.",
+          "icon": "plus",
+          "target": "share-saved",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Back to image",
+          "target": "share-preview",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "share-preview",
+      "note": "Conceptual handoff; no message is sent and no external app is opened.",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "share-saved",
+      "group": "06 Share",
+      "title": "Image ready",
+      "subtitle": "Your selected data, your choice.",
+      "blocks": [
+        {
+          "kind": "success",
+          "value": "Ready for your story."
+        },
+        {
+          "kind": "sharePreview",
+          "template": "route",
+          "height": 260
+        },
+        {
+          "kind": "notice",
+          "title": "Original PNG saved",
+          "detail": "In the implemented app, saving uses your selected device destination. This review does not write an activity image to your gallery.",
+          "tone": "muted",
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Back to activity",
+          "target": "activity",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "share-preview",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "strava",
+      "group": "06 Share",
+      "title": "Take your run\nto Strava.",
+      "subtitle": "Manual GPX export",
+      "blocks": [
+        {
+          "kind": "routeArt",
+          "height": 140
+        },
+        {
+          "kind": "notice",
+          "title": "A file you control",
+          "detail": "Export a timestamped GPX file, then select it on Strava’s upload page. No subscription or developer connection is used by this app.",
+          "tone": "muted",
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Included in GPX",
+          "detail": "Accepted route points and timestamps",
+          "icon": "route",
+          "target": null,
+          "trailing": null
+        },
+        {
+          "kind": "notice",
+          "title": "A GPX file contains location",
+          "detail": "The activity export may contain the complete route. Share-image trimming does not automatically trim this file.",
+          "tone": "warning",
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Export GPX file",
+          "target": null,
+          "tone": "primary",
+          "icon": null
+        },
+        {
+          "kind": "button",
+          "label": "Back to activity",
+          "target": "activity",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "activity",
+      "note": "File export and upload are future app behavior; this review does not upload data.",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "settings",
+      "group": "07 Settings",
+      "title": "Settings",
+      "subtitle": "A personal app. Your preferences.",
+      "blocks": [
+        {
+          "kind": "row",
+          "title": "Appearance",
+          "detail": "Dark · Light · System",
+          "icon": "sun",
+          "target": "appearance",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Units and privacy",
+          "detail": "Kilometers · Route privacy defaults",
+          "icon": "shield-check",
+          "target": "privacy",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Workout cues",
+          "detail": "Voice and interval feedback",
+          "icon": "volume-2",
+          "target": "cues",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Calendar",
+          "detail": "Personal calendar connected",
+          "icon": "calendar-days",
+          "target": "calendar",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Backup and restore",
+          "detail": "Last backup · 23 October",
+          "icon": "download",
+          "target": "backup",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Activity import",
+          "detail": "Preview GPX files",
+          "icon": "file-up",
+          "target": "import",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Shoes",
+          "detail": "Mileage and retired shoes",
+          "icon": "footprints",
+          "target": "shoes",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "About this app",
+          "detail": "Local storage · No account or ads",
+          "icon": "activity",
+          "target": "about",
+          "trailing": null
+        }
+      ],
+      "actions": [],
+      "nav": null,
+      "back": "today",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "appearance",
+      "group": "07 Settings",
+      "title": "Appearance",
+      "subtitle": "Choose what feels clear.",
+      "blocks": [
+        {
+          "kind": "themePreview"
+        },
+        {
+          "kind": "choice",
+          "label": "Dark",
+          "detail": "Graphite with a lime accent",
+          "selected": true,
+          "target": "today"
+        },
+        {
+          "kind": "choice",
+          "label": "Light",
+          "detail": "Soft white with deep ink",
+          "selected": false,
+          "target": "today-light"
+        },
+        {
+          "kind": "choice",
+          "label": "Use system setting",
+          "detail": "Follow Android appearance",
+          "selected": false,
+          "target": null
+        },
+        {
+          "kind": "toggle",
+          "label": "Reduce motion",
+          "detail": "Gentle fades and instant data updates.",
+          "on": true
+        },
+        {
+          "kind": "notice",
+          "title": "Outdoor readability",
+          "detail": "Test both themes in daylight and keep your display brightness comfortable.",
+          "tone": "muted",
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Save appearance",
+          "target": "settings",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "settings",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "privacy",
+      "group": "07 Settings",
+      "title": "Units and privacy",
+      "subtitle": "Defaults for your personal journal.",
+      "blocks": [
+        {
+          "kind": "field",
+          "label": "Distance",
+          "value": "Kilometers",
+          "target": null
+        },
+        {
+          "kind": "field",
+          "label": "Pace",
+          "value": "Minutes per kilometer",
+          "target": null
+        },
+        {
+          "kind": "field",
+          "label": "Week starts",
+          "value": "Monday",
+          "target": null
+        },
+        {
+          "kind": "section",
+          "value": "Share-image defaults",
+          "action": null,
+          "target": null
+        },
+        {
+          "kind": "toggle",
+          "label": "Trim route endpoints",
+          "detail": "Hide first and last 200 meters.",
+          "on": true
+        },
+        {
+          "kind": "toggle",
+          "label": "Show activity date",
+          "detail": "Off unless you choose it.",
+          "on": false
+        },
+        {
+          "kind": "toggle",
+          "label": "Show location names",
+          "detail": "Off unless you choose it.",
+          "on": false
+        },
+        {
+          "kind": "notice",
+          "title": "Your saved activity stays complete",
+          "detail": "Exported images use a separate privacy-trimmed copy.",
+          "tone": "muted",
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Save preferences",
+          "target": "settings",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "settings",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "cues",
+      "group": "07 Settings",
+      "title": "Workout cues",
+      "subtitle": "A little guidance, when you want it.",
+      "blocks": [
+        {
+          "kind": "toggle",
+          "label": "Voice cues",
+          "detail": "Announce workout steps and milestones.",
+          "on": true
+        },
+        {
+          "kind": "field",
+          "label": "Distance updates",
+          "value": "Every 1 kilometer",
+          "target": null
+        },
+        {
+          "kind": "field",
+          "label": "Voice language",
+          "value": "English · Offline voice",
+          "target": null
+        },
+        {
+          "kind": "toggle",
+          "label": "Vibration feedback",
+          "detail": "Start, pause and interval transitions.",
+          "on": true
+        },
+        {
+          "kind": "toggle",
+          "label": "Keep screen on",
+          "detail": "Higher battery use.",
+          "on": false
+        },
+        {
+          "kind": "notice",
+          "title": "If no offline voice is available",
+          "detail": "Use tones and vibration. A voice download is never started silently.",
+          "tone": "muted",
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Save cue settings",
+          "target": "settings",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "settings",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "calendar",
+      "group": "07 Settings",
+      "title": "Your calendar",
+      "subtitle": "Choose where workouts appear.",
+      "blocks": [
+        {
+          "kind": "notice",
+          "title": "You stay in control",
+          "detail": "Only events linked to your workouts are created or updated. Other calendar events are not replaced.",
+          "tone": "muted",
+          "target": null
+        },
+        {
+          "kind": "choice",
+          "label": "Personal",
+          "detail": "Writable calendar · Device account",
+          "selected": true,
+          "target": null
+        },
+        {
+          "kind": "choice",
+          "label": "Training",
+          "detail": "Writable calendar · Local",
+          "selected": false,
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Preview scheduled workouts",
+          "detail": "Review before publishing.",
+          "icon": "calendar-days",
+          "target": "calendar-preview",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "One event needs review",
+          "detail": "The calendar time changed outside this app.",
+          "icon": "triangle-alert",
+          "target": "calendar-conflict",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Preview calendar events",
+          "target": "calendar-preview",
+          "tone": "primary",
+          "icon": null
+        },
+        {
+          "kind": "button",
+          "label": "Continue without calendar",
+          "target": "plan",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "settings",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "calendar-preview",
+      "group": "07 Settings",
+      "title": "Review your schedule",
+      "subtitle": "3 workouts · Personal calendar",
+      "blocks": [
+        {
+          "kind": "row",
+          "title": "Tuesday easy run",
+          "detail": "27 Oct · 07:00–07:30",
+          "icon": "calendar-days",
+          "target": "workout",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Thursday easy run",
+          "detail": "29 Oct · 07:00–07:30",
+          "icon": "calendar-days",
+          "target": "workout",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Saturday easy run",
+          "detail": "31 Oct · 07:00–07:30",
+          "icon": "calendar-days",
+          "target": "workout",
+          "trailing": null
+        },
+        {
+          "kind": "field",
+          "label": "Reminder",
+          "value": "15 minutes before",
+          "target": null
+        },
+        {
+          "kind": "notice",
+          "title": "Calendar sync uses your device",
+          "detail": "Your calendar app handles Google or Samsung account synchronization.",
+          "tone": "muted",
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Publish these workouts",
+          "target": "plan",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "calendar",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "calendar-conflict",
+      "group": "07 Settings",
+      "title": "Which time works?",
+      "subtitle": "Saturday easy run changed in your calendar.",
+      "blocks": [
+        {
+          "kind": "choice",
+          "label": "Keep calendar time",
+          "detail": "Saturday · 08:00–08:30",
+          "selected": true,
+          "target": null
+        },
+        {
+          "kind": "choice",
+          "label": "Use plan time",
+          "detail": "Saturday · 07:00–07:30",
+          "selected": false,
+          "target": null
+        },
+        {
+          "kind": "notice",
+          "title": "One workout, one event",
+          "detail": "Resolve the difference before the app updates the linked calendar entry. Other events stay untouched.",
+          "tone": "muted",
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Keep 08:00 calendar time",
+          "target": "plan",
+          "tone": "primary",
+          "icon": null
+        },
+        {
+          "kind": "button",
+          "label": "Review workout",
+          "target": "editor",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "calendar",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "backup",
+      "group": "07 Settings",
+      "title": "Keep a copy.",
+      "subtitle": "Your history deserves a second home.",
+      "blocks": [
+        {
+          "kind": "success",
+          "value": "Last backup\n23 October"
+        },
+        {
+          "kind": "row",
+          "title": "What is included",
+          "detail": "Runs, routes, plans and check-ins",
+          "icon": "shield-check",
+          "target": null,
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Create a backup",
+          "detail": "Choose a destination you trust.",
+          "icon": "download",
+          "target": "backup-ready",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Restore from a backup",
+          "detail": "Preview and validate before replacing data.",
+          "icon": "file-up",
+          "target": "restore",
+          "trailing": null
+        },
+        {
+          "kind": "toggle",
+          "label": "Backup reminders",
+          "detail": "Occasional reminders on this device.",
+          "on": true
+        },
+        {
+          "kind": "notice",
+          "title": "Exports contain personal data",
+          "detail": "Backups are unencrypted in this release. Store them in a trusted location.",
+          "tone": "warning",
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Create backup",
+          "target": "backup-ready",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "settings",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "backup-ready",
+      "group": "07 Settings",
+      "title": "Backup created",
+      "subtitle": "Keep the file somewhere trusted.",
+      "blocks": [
+        {
+          "kind": "success",
+          "value": "A second copy.\nA little peace of mind."
+        },
+        {
+          "kind": "row",
+          "title": "Included records",
+          "detail": "12 activities · 2 routes · 1 program",
+          "icon": "check",
+          "target": null,
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Backup integrity",
+          "detail": "Manifest and checksums verified",
+          "icon": "shield-check",
+          "target": null,
+          "trailing": null
+        },
+        {
+          "kind": "notice",
+          "title": "Test a restore occasionally",
+          "detail": "A valid file is useful only if you can recover it. Your current app data was not changed.",
+          "tone": "muted",
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Back to backup settings",
+          "target": "backup",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "backup",
+      "note": "Illustrative success state, not a claim that a real archive was created.",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "restore",
+      "group": "07 Settings",
+      "title": "Restore your history",
+      "subtitle": "Review the backup before continuing.",
+      "blocks": [
+        {
+          "kind": "row",
+          "title": "Selected backup",
+          "detail": "running-backup-2026-10-23.zip",
+          "icon": "file-up",
+          "target": null,
+          "trailing": null
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "12",
+              "label": "activities"
+            },
+            {
+              "value": "2",
+              "label": "routes"
+            },
+            {
+              "value": "1",
+              "label": "program"
+            }
+          ]
+        },
+        {
+          "kind": "notice",
+          "title": "Validation passed",
+          "detail": "Supported format, record counts and file checksums are valid.",
+          "tone": "success",
+          "target": null
+        },
+        {
+          "kind": "notice",
+          "title": "This replaces current local data",
+          "detail": "A safety backup is created first. Device-specific calendar links are reconnected afterward.",
+          "tone": "warning",
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Restore this backup",
+          "target": "restored",
+          "tone": "primary",
+          "icon": null
+        },
+        {
+          "kind": "button",
+          "label": "Choose another file",
+          "target": "backup",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "backup",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "restored",
+      "group": "07 Settings",
+      "title": "History restored",
+      "subtitle": "Ready to pick up where you left off.",
+      "blocks": [
+        {
+          "kind": "success",
+          "value": "Welcome back\nto your miles."
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "12",
+              "label": "activities"
+            },
+            {
+              "value": "2",
+              "label": "routes"
+            }
+          ]
+        },
+        {
+          "kind": "notice",
+          "title": "Reconnect your calendar",
+          "detail": "Device event links are not portable. Review your chosen calendar before publishing again.",
+          "tone": "muted",
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Review restored activities",
+          "detail": "Your history is available locally.",
+          "icon": "activity",
+          "target": "history",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Go to Today",
+          "target": "today",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "backup",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "restore-error",
+      "group": "07 Settings",
+      "title": "This backup\ncannot be restored.",
+      "subtitle": "Your current data is unchanged.",
+      "blocks": [
+        {
+          "kind": "notice",
+          "title": "File validation failed",
+          "detail": "The archive is incomplete or a checksum does not match. Choose another backup or export a fresh copy from the original device.",
+          "tone": "warning",
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Current history is safe",
+          "detail": "No replacement was performed.",
+          "icon": "shield-check",
+          "target": null,
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Choose another backup",
+          "target": "restore",
+          "tone": "primary",
+          "icon": null
+        },
+        {
+          "kind": "button",
+          "label": "Back to settings",
+          "target": "settings",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "backup",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "about",
+      "group": "07 Settings",
+      "title": "Made for your run.",
+      "subtitle": "Running Tracker · Design review",
+      "blocks": [
+        {
+          "kind": "routeArt",
+          "height": 180
+        },
+        {
+          "kind": "text",
+          "value": "A quiet place for routes, routine and progress.",
+          "role": "headline",
+          "color": "text"
+        },
+        {
+          "kind": "row",
+          "title": "Data storage",
+          "detail": "On your phone · Manual backup",
+          "icon": "shield-check",
+          "target": null,
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Maps",
+          "detail": "MapLibre + OpenFreeMap · Attribution shown",
+          "icon": "map",
+          "target": null,
+          "trailing": null
+        },
+        {
+          "kind": "notice",
+          "title": "Review prototype",
+          "detail": "All values and route drawings are illustrative. No location, calendar, sharing or medical service runs in this design review.",
+          "tone": "muted",
+          "target": null
+        }
+      ],
+      "actions": [],
+      "nav": null,
+      "back": "settings",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "heatmap",
+      "group": "08 Personal history",
+      "title": "Your well-worn paths",
+      "subtitle": "Personal activity frequency",
+      "blocks": [
+        {
+          "kind": "segments",
+          "options": [
+            "Month",
+            "Year",
+            "All time"
+          ],
+          "selected": 0
+        },
+        {
+          "kind": "map",
+          "height": 330,
+          "heat": true
+        },
+        {
+          "kind": "legend"
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "10",
+              "label": "activities"
+            },
+            {
+              "value": "48.2",
+              "label": "kilometers"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "value": "Brighter paths mean more of your activities passed here. This is your history, not population popularity.",
+          "role": "small",
+          "color": "muted"
+        },
+        {
+          "kind": "row",
+          "title": "Import older activities",
+          "detail": "Add GPX history with duplicate checks.",
+          "icon": "file-up",
+          "target": "import",
+          "trailing": null
+        }
+      ],
+      "actions": [],
+      "nav": "Maps",
+      "back": "maps",
+      "note": "Following-release feature. Local activity frequency; schematic route data.",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "import",
+      "group": "08 Personal history",
+      "title": "Bring your history.",
+      "subtitle": "Import GPX activity files.",
+      "blocks": [
+        {
+          "kind": "routeArt",
+          "height": 160
+        },
+        {
+          "kind": "row",
+          "title": "Choose GPX files",
+          "detail": "Use Android’s system file picker.",
+          "icon": "file-up",
+          "target": "import-review",
+          "trailing": null
+        },
+        {
+          "kind": "notice",
+          "title": "Review before saving",
+          "detail": "We check format, timestamps and duplicate fingerprints. A repeated file never creates another copy.",
+          "tone": "muted",
+          "target": null
+        },
+        {
+          "kind": "text",
+          "value": "Original sources are retained in the activity record. Imported runs with insufficient data do not count as coaching evidence.",
+          "role": "body",
+          "color": "muted"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Choose files",
+          "target": "import-review",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "settings",
+      "note": "Following-release feature. No user files are read by the review.",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "import-review",
+      "group": "08 Personal history",
+      "title": "Review your imports",
+      "subtitle": "3 files checked · 1 ready to add",
+      "blocks": [
+        {
+          "kind": "choice",
+          "label": "Sunday easy run",
+          "detail": "New · 5.2 km · 32:14",
+          "selected": true,
+          "target": null
+        },
+        {
+          "kind": "notice",
+          "title": "Tuesday run · Duplicate",
+          "detail": "Already in your journal. This file will be skipped.",
+          "tone": "muted",
+          "target": null
+        },
+        {
+          "kind": "notice",
+          "title": "Park run · Invalid timestamps",
+          "detail": "Cannot import as an activity. Check the original file.",
+          "tone": "warning",
+          "target": null
+        },
+        {
+          "kind": "text",
+          "value": "Only the selected valid activity will be added. Existing activities are unchanged.",
+          "role": "body",
+          "color": "muted"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Import 1 activity",
+          "target": "history",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "import",
+      "note": "Following-release feature.",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "shoes",
+      "group": "08 Personal history",
+      "title": "Your shoes",
+      "subtitle": "A simple mileage log.",
+      "blocks": [
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "2",
+              "label": "active pairs"
+            },
+            {
+              "value": "413",
+              "label": "total kilometers"
+            }
+          ]
+        },
+        {
+          "kind": "row",
+          "title": "Daily trainers",
+          "detail": "286 km · Default for easy runs",
+          "icon": "footprints",
+          "target": "shoe-detail",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Lightweight pair",
+          "detail": "127 km · Used for intervals",
+          "icon": "footprints",
+          "target": "shoe-detail",
+          "trailing": null
+        },
+        {
+          "kind": "section",
+          "value": "Retired",
+          "action": null,
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Previous trainers",
+          "detail": "612 km · Retired in August",
+          "icon": "footprints",
+          "target": "shoe-detail",
+          "trailing": null
+        },
+        {
+          "kind": "notice",
+          "title": "Reminders are your choice",
+          "detail": "Mileage is a log, not a medical replacement rule.",
+          "tone": "muted",
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Add a pair",
+          "target": "shoe-edit",
+          "tone": "primary",
+          "icon": "plus"
+        }
+      ],
+      "nav": null,
+      "back": "settings",
+      "note": "Following-release feature.",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "shoe-detail",
+      "group": "08 Personal history",
+      "title": "Daily trainers",
+      "subtitle": "Active pair",
+      "blocks": [
+        {
+          "kind": "shoeArt"
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "286",
+              "label": "kilometers"
+            },
+            {
+              "value": "38",
+              "label": "activities"
+            }
+          ]
+        },
+        {
+          "kind": "row",
+          "title": "Last used",
+          "detail": "Saturday easy run · 3.84 km",
+          "icon": "route",
+          "target": "activity",
+          "trailing": null
+        },
+        {
+          "kind": "field",
+          "label": "Mileage reminder",
+          "value": "600 km · Adjustable",
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Edit this pair",
+          "detail": "Name, starting mileage and default use",
+          "icon": "sliders-horizontal",
+          "target": "shoe-edit",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Retire these shoes",
+          "detail": "Keep the history attached to past runs.",
+          "icon": "footprints",
+          "target": "shoes",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Use as default pair",
+          "target": "shoes",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "shoes",
+      "note": "Following-release feature.",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "shoe-edit",
+      "group": "08 Personal history",
+      "title": "Add your shoes",
+      "subtitle": "Give each pair a place in your journal.",
+      "blocks": [
+        {
+          "kind": "field",
+          "label": "Name",
+          "value": "Daily trainers",
+          "target": null
+        },
+        {
+          "kind": "field",
+          "label": "Starting mileage",
+          "value": "0 km",
+          "target": null
+        },
+        {
+          "kind": "field",
+          "label": "Optional mileage reminder",
+          "value": "600 km",
+          "target": null
+        },
+        {
+          "kind": "toggle",
+          "label": "Use for new runs",
+          "detail": "You can change shoes on each activity.",
+          "on": true
+        },
+        {
+          "kind": "text",
+          "value": "Retiring a pair never removes its mileage or activity history.",
+          "role": "body",
+          "color": "muted"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Save pair",
+          "target": "shoes",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "shoes",
+      "note": "Following-release feature.",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "loading",
+      "group": "09 Edge states",
+      "title": "Progress",
+      "subtitle": "Opening your local journal…",
+      "blocks": [
+        {
+          "kind": "skeleton"
+        },
+        {
+          "kind": "notice",
+          "title": "Loading saved activities",
+          "detail": "Charts appear after the local records are ready. Recording controls remain independently available.",
+          "tone": "muted",
+          "target": null
+        }
+      ],
+      "actions": [],
+      "nav": "Progress",
+      "back": null,
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "storage-error",
+      "group": "09 Edge states",
+      "title": "Recording needs\nmore space.",
+      "subtitle": "Your last saved checkpoint is preserved.",
+      "blocks": [
+        {
+          "kind": "notice",
+          "title": "Storage write failed",
+          "detail": "Recording has paused because new samples could not be saved. Free device space, then retry or save the partial run.",
+          "tone": "warning",
+          "target": null
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "24:18",
+              "label": "last saved active time"
+            },
+            {
+              "value": "3.84",
+              "label": "saved kilometers"
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "value": "The app does not keep pretending to record when it cannot save your run.",
+          "role": "body",
+          "color": "muted"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Retry saving",
+          "target": "paused",
+          "tone": "primary",
+          "icon": null
+        },
+        {
+          "kind": "button",
+          "label": "Save partial run",
+          "target": "finish",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": null,
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "map-unavailable",
+      "group": "09 Edge states",
+      "title": "Route-only view",
+      "subtitle": "Basemap unavailable",
+      "blocks": [
+        {
+          "kind": "map",
+          "height": 330,
+          "routeOnly": true
+        },
+        {
+          "kind": "notice",
+          "title": "Your route is still here",
+          "detail": "Map resources are unavailable. GPS recording and saved route geometry work independently of the basemap.",
+          "tone": "muted",
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Offline areas",
+          "detail": "Check saved map resources.",
+          "icon": "download",
+          "target": "offline",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Continue with route",
+          "target": "pre-run",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "maps",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "coach-missing",
+      "group": "09 Edge states",
+      "title": "No change for now.",
+      "subtitle": "Your plan stays as it is.",
+      "blocks": [
+        {
+          "kind": "notice",
+          "title": "More feedback would help",
+          "detail": "Two check-ins are missing and one run has a GPS gap. Unknown data is not treated as an easy run.",
+          "tone": "muted",
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Complete a check-in",
+          "detail": "Tell the coach how the run felt.",
+          "icon": "activity",
+          "target": "check-in",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Edit the plan yourself",
+          "detail": "Your manual builder is always available.",
+          "icon": "calendar-days",
+          "target": "editor",
+          "trailing": null
+        },
+        {
+          "kind": "text",
+          "value": "This is an explanation of local rules, not an injury or health assessment.",
+          "role": "body",
+          "color": "muted"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Keep my plan",
+          "target": "plan",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "coach",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "calendar-denied",
+      "group": "09 Edge states",
+      "title": "Keep planning here.",
+      "subtitle": "Calendar access is unavailable.",
+      "blocks": [
+        {
+          "kind": "notice",
+          "title": "Your in-app plan still works",
+          "detail": "No calendar events were changed. You can grant access later or export a schedule file for manual import.",
+          "tone": "muted",
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Review calendar access",
+          "detail": "Choose a writable calendar.",
+          "icon": "calendar-days",
+          "target": "calendar",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Export schedule file",
+          "detail": "ICS for manual calendar import",
+          "icon": "download",
+          "target": null,
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "View my plan",
+          "target": "plan",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "settings",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "share-empty",
+      "group": "09 Edge states",
+      "title": "Choose something\nto share.",
+      "subtitle": "No fields or route selected.",
+      "blocks": [
+        {
+          "kind": "sharePreview",
+          "template": "empty",
+          "height": 320
+        },
+        {
+          "kind": "notice",
+          "title": "Add at least one item",
+          "detail": "Choose a number, a title or a visible route. Export becomes available when the image contains something.",
+          "tone": "muted",
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Choose data",
+          "detail": "Distance, time, pace and more",
+          "icon": "sliders-horizontal",
+          "target": "share-fields",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Choose share data",
+          "target": "share-fields",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "share-compose",
+      "note": "",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "today-light",
+      "group": "10 Light theme",
+      "title": "Today",
+      "subtitle": "SATURDAY, 24 OCTOBER",
+      "blocks": [
+        {
+          "kind": "workout",
+          "title": "Easy run",
+          "minutes": "30",
+          "label": "TODAY’S SESSION",
+          "effort": "Comfortable effort · RPE 2–4",
+          "target": "workout"
+        },
+        {
+          "kind": "section",
+          "value": "This week",
+          "action": "View plan",
+          "target": "plan"
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "2 / 3",
+              "label": "runs completed"
+            },
+            {
+              "value": "62",
+              "label": "minutes"
+            },
+            {
+              "value": "9.8",
+              "label": "kilometers"
+            }
+          ]
+        },
+        {
+          "kind": "chart",
+          "mode": "week",
+          "height": 100
+        },
+        {
+          "kind": "row",
+          "title": "Your last run",
+          "detail": "Thursday · 5.2 km · 32:14",
+          "icon": "route",
+          "target": "activity",
+          "trailing": null
+        },
+        {
+          "kind": "notice",
+          "title": "Keep it comfortable",
+          "detail": "No plan changes today. Your next review is Sunday.",
+          "tone": "muted",
+          "target": "coach"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Start easy run",
+          "target": "pre-run",
+          "tone": "primary",
+          "icon": "play"
+        }
+      ],
+      "nav": "Today",
+      "back": null,
+      "note": "Light-theme counterpart; same product hierarchy.",
+      "theme": "light",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "plan-light",
+      "group": "10 Light theme",
+      "title": "Your plan",
+      "subtitle": "WEEK 3 · BUILD A ROUTINE",
+      "blocks": [
+        {
+          "kind": "week",
+          "selected": 5
+        },
+        {
+          "kind": "workout",
+          "title": "Easy run",
+          "minutes": "30",
+          "label": "SATURDAY · TODAY",
+          "effort": "Comfortable effort · RPE 2–4",
+          "target": "workout"
+        },
+        {
+          "kind": "row",
+          "title": "Tuesday · Easy run",
+          "detail": "30 min · Completed",
+          "icon": "check-check",
+          "target": "activity",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Thursday · Easy run",
+          "detail": "32 min · Completed",
+          "icon": "check-check",
+          "target": "activity",
+          "trailing": null
+        },
+        {
+          "kind": "notice",
+          "title": "Weekly review is ready",
+          "detail": "Your feedback suggests keeping next week steady.",
+          "tone": "muted",
+          "target": "coach"
+        },
+        {
+          "kind": "row",
+          "title": "Calendar",
+          "detail": "3 workouts scheduled",
+          "icon": "calendar-days",
+          "target": "calendar",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Review next week",
+          "target": "coach",
+          "tone": "primary",
+          "icon": null
+        }
+      ],
+      "nav": "Plan",
+      "back": null,
+      "note": "Light-theme counterpart; same product hierarchy.",
+      "theme": "light",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "pre-run-light",
+      "group": "10 Light theme",
+      "title": "Ready to run",
+      "subtitle": "GPS ready · Precise location",
+      "blocks": [
+        {
+          "kind": "map",
+          "height": 240
+        },
+        {
+          "kind": "row",
+          "title": "Easy run · 30 min",
+          "detail": "Comfortable effort · RPE 2–4",
+          "icon": "activity",
+          "target": "workout",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Riverside loop",
+          "detail": "5.2 km · Saved route",
+          "icon": "route",
+          "target": "routes",
+          "trailing": null
+        },
+        {
+          "kind": "toggle",
+          "label": "Workout voice cues",
+          "detail": "Uses an available offline voice.",
+          "on": true
+        },
+        {
+          "kind": "notice",
+          "title": "Your recording stays local",
+          "detail": "Background recording remains visible in your notifications.",
+          "tone": "muted",
+          "target": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Start recording",
+          "target": "record",
+          "tone": "primary",
+          "icon": "play"
+        }
+      ],
+      "nav": null,
+      "back": "today",
+      "note": "Light-theme counterpart; same product hierarchy.",
+      "theme": "light",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "maps-light",
+      "group": "10 Light theme",
+      "title": "Maps",
+      "subtitle": "A familiar path, ready to follow.",
+      "blocks": [
+        {
+          "kind": "map",
+          "height": 350
+        },
+        {
+          "kind": "segments",
+          "options": [
+            "Saved routes",
+            "Personal heatmap"
+          ],
+          "selected": 0,
+          "targets": [
+            "routes",
+            "heatmap"
+          ]
+        },
+        {
+          "kind": "row",
+          "title": "Riverside loop",
+          "detail": "5.2 km · Saved for offline viewing",
+          "icon": "route",
+          "target": "route-detail",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Popular places to run",
+          "detail": "Open population heatmap in your browser.",
+          "icon": "layers",
+          "target": "population",
+          "trailing": null
+        }
+      ],
+      "actions": [],
+      "nav": "Maps",
+      "back": null,
+      "note": "Light-theme counterpart; same product hierarchy.",
+      "theme": "light",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "progress-light",
+      "group": "10 Light theme",
+      "title": "Progress",
+      "subtitle": "Consistency, one week at a time.",
+      "blocks": [
+        {
+          "kind": "segments",
+          "options": [
+            "Week",
+            "Month",
+            "All"
+          ],
+          "selected": 0,
+          "targets": [
+            "progress",
+            "progress-month",
+            "progress-month"
+          ]
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "14.6",
+              "label": "kilometers"
+            },
+            {
+              "value": "94",
+              "label": "minutes"
+            },
+            {
+              "value": "3",
+              "label": "runs"
+            }
+          ]
+        },
+        {
+          "kind": "chart",
+          "mode": "trend",
+          "height": 220
+        },
+        {
+          "kind": "notice",
+          "title": "A steady month",
+          "detail": "You completed 10 of 12 planned runs. Based on saved activities, not a performance prediction.",
+          "tone": "muted",
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Activity journal",
+          "detail": "Routes, splits and notes",
+          "icon": "route",
+          "target": "history",
+          "trailing": null
+        },
+        {
+          "kind": "row",
+          "title": "Your shoes",
+          "detail": "See accumulated mileage.",
+          "icon": "footprints",
+          "target": "shoes",
+          "trailing": null
+        }
+      ],
+      "actions": [],
+      "nav": "Progress",
+      "back": null,
+      "note": "Light-theme counterpart; same product hierarchy.",
+      "theme": "light",
+      "width": 400,
+      "height": 900
+    },
+    {
+      "id": "today-compact",
+      "group": "11 Accessibility",
+      "title": "Today",
+      "subtitle": "SATURDAY, 24 OCTOBER",
+      "blocks": [
+        {
+          "kind": "workout",
+          "title": "Easy run",
+          "minutes": "30",
+          "label": "TODAY’S SESSION",
+          "effort": "Comfortable effort · RPE 2–4",
+          "target": "workout"
+        },
+        {
+          "kind": "section",
+          "value": "This week",
+          "action": "View plan",
+          "target": "plan"
+        },
+        {
+          "kind": "stats",
+          "values": [
+            {
+              "value": "2 / 3",
+              "label": "runs completed"
+            },
+            {
+              "value": "62",
+              "label": "minutes"
+            },
+            {
+              "value": "9.8",
+              "label": "kilometers"
+            }
+          ]
+        },
+        {
+          "kind": "chart",
+          "mode": "week",
+          "height": 100
+        },
+        {
+          "kind": "row",
+          "title": "Your last run",
+          "detail": "Thursday · 5.2 km · 32:14",
+          "icon": "route",
+          "target": "activity",
+          "trailing": null
+        },
+        {
+          "kind": "notice",
+          "title": "Keep it comfortable",
+          "detail": "No plan changes today. Your next review is Sunday.",
+          "tone": "muted",
+          "target": "coach"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Start easy run",
+          "target": "pre-run",
+          "tone": "primary",
+          "icon": "play"
+        }
+      ],
+      "nav": "Today",
+      "back": null,
+      "note": "Compact 320-pixel review. Content scrolls above the persistent action area.",
+      "theme": "dark",
+      "width": 320,
+      "height": 900
+    },
+    {
+      "id": "large-text",
+      "group": "11 Accessibility",
+      "title": "Ready to run",
+      "subtitle": "Large-text review",
+      "blocks": [
+        {
+          "kind": "text",
+          "value": "Easy run",
+          "role": "headline",
+          "color": "text"
+        },
+        {
+          "kind": "text",
+          "value": "30 minutes · Comfortable effort",
+          "role": "body",
+          "color": "text"
+        },
+        {
+          "kind": "notice",
+          "title": "GPS ready",
+          "detail": "Your location is precise enough to begin. All essential controls remain reachable.",
+          "tone": "muted",
+          "target": null
+        },
+        {
+          "kind": "row",
+          "title": "Choose a saved route",
+          "detail": "Riverside loop",
+          "icon": "route",
+          "target": "routes",
+          "trailing": null
+        }
+      ],
+      "actions": [
+        {
+          "kind": "button",
+          "label": "Start recording",
+          "target": "record",
+          "tone": "primary",
+          "icon": null
+        },
+        {
+          "kind": "button",
+          "label": "Back to Today",
+          "target": "today",
+          "tone": "secondary",
+          "icon": null
+        }
+      ],
+      "nav": null,
+      "back": "today",
+      "note": "Large text at 200% in the browser review; native Android font-scale testing is still required.",
+      "theme": "dark",
+      "width": 400,
+      "height": 900
+    }
+  ]
+}

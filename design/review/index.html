@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Running Tracker — UI and UX review</title>
+  <link rel="stylesheet" href="review.css">
+</head>
+<body>
+  <a class="skip" href="#review-content">Skip to frames</a>
+  <aside class="review-sidebar">
+    <div class="review-brand">RUNNING<br><span>Design review / 02</span></div>
+    <p class="review-caption">A quieter place for<br>your next run.</p>
+    <nav id="groups" aria-label="Frame groups"></nav>
+    <div class="review-sidebar-foot">Candidate for your review<br>Illustrative data only</div>
+  </aside>
+  <main id="review-content">
+    <header class="review-toolbar">
+      <div><h1>UI & UX review</h1><p id="review-summary">Complete mobile flows, ready to explore.</p></div>
+      <div class="review-tools">
+        <label><input type="checkbox" id="reduce-motion"> Less motion</label>
+        <button id="show-overview" type="button">All frames</button>
+        <a href="https://www.figma.com/design/7CpE47wcyMtInNRhbwt3tD" target="_blank" rel="noreferrer">Open Figma ↗</a>
+      </div>
+    </header>
+    <div class="review-context"><span class="review-dot"></span> Interactive design preview <span>—</span> no GPS, calendar or sharing service is running.</div>
+    <div id="frames" class="frame-grid"></div>
+    <p id="review-live" class="sr-only" role="status" aria-live="polite"></p>
+  </main>
+  <script type="module" src="review.mjs"></script>
+</body>
+</html>

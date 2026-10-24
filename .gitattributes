@@ -1,0 +1,5 @@
+*.png binary
+*.ttf binary
+*.docx binary
+# Preserve the downloaded upstream license text, including its original spacing.
+design/assets/fonts/*-OFL.txt whitespace=-blank-at-eol
