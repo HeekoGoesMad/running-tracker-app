@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "status": "proposed",
+  "colors": {
+    "dark": {
+      "background": "#11140D",
+      "surface": "#1C2118",
+      "surfaceRaised": "#293123",
+      "textPrimary": "#F4F7EE",
+      "textSecondary": "#BBC5B0",
+      "borderStrong": "#7A866F",
+      "primaryFill": "#D2F56A",
+      "onPrimary": "#17200E",
+      "accentText": "#D2F56A",
+      "successText": "#B9E884",
+      "warningText": "#F2D572",
+      "errorText": "#FF9AA5"
+    },
+    "light": {
+      "background": "#F6F8F1",
+      "surface": "#FFFFFF",
+      "surfaceRaised": "#EDF2E5",
+      "textPrimary": "#17200E",
+      "textSecondary": "#52604A",
+      "borderStrong": "#74816A",
+      "primaryFill": "#D2F56A",
+      "onPrimary": "#17200E",
+      "accentText": "#365200",
+      "successText": "#365200",
+      "warningText": "#6B5500",
+      "errorText": "#9A1F37"
+    }
+  },
+  "spacingDp": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48
+  ],
+  "radiusDp": [
+    8,
+    16,
+    24
+  ],
+  "fontFamily": "Roboto",
+  "minimumTouchTargetDp": 48,
+  "recordingTouchTargetDp": 64,
+  "typographySp": {
+    "live": [
+      56,
+      62,
+      700
+    ],
+    "metric": [
+      40,
+      46,
+      600
+    ],
+    "pageTitle": [
+      28,
+      34,
+      600
+    ],
+    "section": [
+      20,
+      26,
+      600
+    ],
+    "body": [
+      16,
+      24,
+      400
+    ],
+    "button": [
+      16,
+      20,
+      500
+    ],
+    "supporting": [
+      14,
+      20,
+      400
+    ],
+    "caption": [
+      12,
+      16,
+      500
+    ]
+  }
+}

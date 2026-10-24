@@ -1,0 +1,118 @@
+{
+  "method": "WCAG relative luminance",
+  "scope": "specified solid-color pairs only; no device or image-overlay validation implied",
+  "checks": [
+    {
+      "mode": "dark",
+      "foreground": "textPrimary",
+      "background": "background",
+      "ratio": 17.16,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "textSecondary",
+      "background": "surface",
+      "ratio": 9.16,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "accentText",
+      "background": "surface",
+      "ratio": 13.29,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "onPrimary",
+      "background": "primaryFill",
+      "ratio": 13.61,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "borderStrong",
+      "background": "surfaceRaised",
+      "ratio": 3.51,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "warningText",
+      "background": "surface",
+      "ratio": 11.36,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "mode": "dark",
+      "foreground": "errorText",
+      "background": "surface",
+      "ratio": 8.14,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "mode": "light",
+      "foreground": "textPrimary",
+      "background": "background",
+      "ratio": 15.7,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "mode": "light",
+      "foreground": "textSecondary",
+      "background": "surface",
+      "ratio": 6.71,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "mode": "light",
+      "foreground": "accentText",
+      "background": "surface",
+      "ratio": 8.88,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "mode": "light",
+      "foreground": "onPrimary",
+      "background": "primaryFill",
+      "ratio": 13.61,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "mode": "light",
+      "foreground": "borderStrong",
+      "background": "surfaceRaised",
+      "ratio": 3.62,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "mode": "light",
+      "foreground": "warningText",
+      "background": "surface",
+      "ratio": 7.18,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "mode": "light",
+      "foreground": "errorText",
+      "background": "surface",
+      "ratio": 8.0,
+      "minimum": 4.5,
+      "pass": true
+    }
+  ]
+}

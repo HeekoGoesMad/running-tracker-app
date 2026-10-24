@@ -1,0 +1,24 @@
+# Personal references and location data
+/strava.zip
+/private/
+/local-data/
+/exports/
+*.gpx
+*.fit
+*.tcx
+*.db
+*.db-shm
+*.db-wal
+*.zip
+
+# Authoring intermediates and local environment
+/.work/
+.env
+.env.*
+!.env.example
+local.properties
+*.jks
+*.keystore
+/.idea/
+/.gradle/
+**/build/
